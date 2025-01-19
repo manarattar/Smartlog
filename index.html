@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Input Section -->
+    <div class="input-section">
+      <h2>Pull-ups</h2>
+      <div class="input-row">
+        <input type="number" placeholder="Set" id="set">
+        <input type="number" placeholder="Reps" id="reps">
+        <input type="number" placeholder="Weight (kg)" id="weight">
+        <button id="add-set">+</button>
+      </div>
+      <div id="log-container"></div>
+    </div>
+
+    <!-- Visualization Section -->
+    <div class="visual-section">
+      <h2>Visualization</h2>
+      <canvas id="chart" width="400" height="200"></canvas>
+      <div class="stats-buttons">
+        <button id="sets">Sets</button>
+        <button id="max-weight">Max Weight</button>
+        <button id="volume">Volume</button>
+        <button id="reps">Reps</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
